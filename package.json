@@ -1,8 +1,32 @@
 {
-  "name": "basic-boilerplate",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com-abhilash-awebdigital:abhilash-awebdigital/basic-boilerplate.git",
-  "author": "abhilashkakumanu1 <abhilashkakumanu1@gmail.com>",
-  "license": "MIT"
+    "name": "basic-boilerplate",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com-abhilash-awebdigital:abhilash-awebdigital/basic-boilerplate.git",
+    "author": "abhilashkakumanu1 <abhilashkakumanu1@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "dev": "nodemon",
+        "lint": "eslint . --ext .ts",
+        "lint-and-fix": "eslint . --ext .ts --fix",
+        "test": "jest",
+        "test:coverage": "jest --coverage",
+        "build": "rimraf ./build && tsc",
+        "start": "npm run build && node build/index.js"
+    },
+    "devDependencies": {
+        "@types/jest": "^27.0.3",
+        "@types/node": "^16.11.11",
+        "@typescript-eslint/eslint-plugin": "^5.5.0",
+        "@typescript-eslint/parser": "^5.5.0",
+        "eslint": "^8.4.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-config-standard-with-typescript": "^21.0.1",
+        "jest": "^27.4.3",
+        "nodemon": "^2.0.15",
+        "rimraf": "^3.0.2",
+        "ts-jest": "^27.1.0",
+        "ts-node": "^10.4.0",
+        "typescript": "^4.5.2"
+    }
 }
