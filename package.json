@@ -1,0 +1,8 @@
+{
+  "name": "basic-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com-abhilash-awebdigital:abhilash-awebdigital/basic-boilerplate.git",
+  "author": "abhilashkakumanu1 <abhilashkakumanu1@gmail.com>",
+  "license": "MIT"
+}
